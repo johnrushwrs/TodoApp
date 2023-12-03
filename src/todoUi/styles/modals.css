@@ -1,0 +1,75 @@
+.modal-shade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+
+    background-color: rgb(245, 222, 179, 1);
+    padding: 10px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgb(245, 222, 179, .3);;
+}
+
+.form-modal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-modal span {
+    font-size: 24px;
+}
+
+.form-modal .input-container {
+    padding-top: 20px;
+}
+
+.input-container span
+{
+    font-size: 20px;
+    opacity: .75;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.input-container input 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-section button {
+    flex: .2;
+    border-radius: 4px;
+    padding: 10;
+    font-size: 14px;
+    background-color: whitesmoke;
+    border-width: 1px;
+    transition: font-weight .15s, background-color .15s;
+}
+
+.button-section button:hover {
+    font-weight: bold;
+    background-color: rgb(270, 270, 270);
+}

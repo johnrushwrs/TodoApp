@@ -1,0 +1,16 @@
+FROM mysql:latest
+
+# Set environment variables
+ENV MYSQL_ROOT_PASSWORD=testPassword
+ENV MYSQL_DATABASE=Todo
+ENV MYSQL_USER=admin
+ENV MYSQL_PASSWORD=testPassword
+
+# Copy custom MySQL configuration file
+COPY my.cnf /etc/mysql/conf.d/my.cnf
+
+# Expose MySQL port
+EXPOSE 3306
+
+# Start MySQL server on container startup
+CMD ["mysqld"]

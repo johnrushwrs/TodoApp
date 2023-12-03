@@ -1,0 +1,83 @@
+.list-header {
+    text-align: center;
+    font-size: 36px;
+    flex: .2;
+    margin-bottom: 20px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#recent-lists-container {
+    flex: .8;
+    display: flex;
+    background-color: aliceblue;
+    width: 75%;
+    justify-content: space-around;
+    padding: 40px 0px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.recent-list {
+    display: flex;
+    position: relative;
+
+    border: solid 3px rgb(120, 113, 113);
+    border-radius: 4px;
+
+    padding: 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-list .title
+{
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+}
+
+.recent-list .title:hover
+{
+    text-decoration: underline;
+}
+
+.recent-list .delete-button
+{
+    color: rgba(255, 0, 0, 0.656);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: fit-content;
+}
+
+.items-list li {
+    padding-right: 20px;
+}
+
+.note-span {
+    text-align: center;
+    font-size: 16px;
+}
+
+#create-new-list-button {
+    margin-top: 20px;
+    padding: 10 20;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#create-new-list-button:hover
+{
+    background-color: rgba(181, 181, 134, .3);
+    color: white;
+}

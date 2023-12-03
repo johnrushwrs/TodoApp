@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  api:
+    build: ./
+    networks:
+      my_network:
+    ports:
+      - "8000:5000"
+    depends_on:
+      - database
+
+  database:
+    build:
+      context: ./Dockerfiles
+      dockerfile: mysqlDB
+    networks:
+      my_network:
+    ports:
+      - "3306:3306"
+    volumes:
+      - todo-db-data:/var/lib/mysql
+
+volumes:
+  todo-db-data:
+
+networks:
+  my_network:

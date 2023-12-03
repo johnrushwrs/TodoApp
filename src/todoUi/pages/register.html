@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/errors.css">
+        <script src="../scripts/api-client.js" type="module"></script>
+        <script src="../scripts/register-page.js" type="module"></script>
+    </head>
+
+    <body>
+        <div class="login-container">
+            <div class="company-logo">
+                <img src="../images/notepad-logo.png" alt="" srcset="">
+                <span class="company-title">basic-todo</span>
+            </div>
+            <div class="form-container">
+                <form id="register-form">
+                    <div id="error-section"></div>
+                    <div class="input-container">
+                        <span>Username</span>
+                        <input name="username" class="form-input" style="display: block;" type="text" placeholder="user@example.com">
+                    </div>
+                    <div class="input-container">
+                        <span>Email</span>
+                        <input name="email" class="form-input" style="display: block;" type="text" placeholder="user@example.com">
+                    </div>
+                    <div class="input-container">
+                        <span>Password</span>
+                        <input name="password" class="form-input" style="display: block;" type="password">
+                    </div>
+                    <div class="input-container">
+                        <span>Confirm Password</span>
+                        <input name="passwordConfirm" class="form-input" style="display: block;" type="password">
+                    </div>
+                    <button class="login-button" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
